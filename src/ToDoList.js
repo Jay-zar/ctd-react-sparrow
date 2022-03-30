@@ -13,7 +13,7 @@ const toDoList = [
     }
 ];
 
-function toDoList () {
+function ToDoList () {
     return (
       <ul>
         {toDoList.map(function(item) {
@@ -27,4 +27,4 @@ function toDoList () {
     )
 }
 
-export default toDoList;
+export default ToDoList;
