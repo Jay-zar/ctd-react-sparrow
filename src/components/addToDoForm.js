@@ -17,7 +17,7 @@ const AddToDoForm= ({onAddToDo}) => {
     };
     return(
         <form onSubmit={handleAddToDo}>
-           <InputWithLabel className={style.InputBar} toDoTitle={toDoTitle} handleTitleChange={handleTitleChange}>Title</InputWithLabel>
+           <InputWithLabel toDoTitle={toDoTitle} handleTitleChange={handleTitleChange}>Title</InputWithLabel>
             <button className={style.AddToDoButton}>Add</button>
         </form>
     )

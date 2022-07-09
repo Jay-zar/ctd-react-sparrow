@@ -6,8 +6,8 @@ function Header () {
 
     return (
     <div className= {style.Header}>
-        <Link to="/">Home</Link>
-        <Link to="/goals">Goals</Link>
+        <Link to="/" className= {style.NavItem}>Home</Link>
+        <Link to="/goals" className= {style.NavItem}>Goals</Link>
     </div>)
     
 }

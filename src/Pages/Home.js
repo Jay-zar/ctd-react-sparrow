@@ -1,5 +1,5 @@
 import React from 'react';
-import ToDoContainer from '../components/ToDoContainer';
+import ToDoContainer from '../components/ToDoContainer/ToDoContainer';
 
 function HomePage () {
   // tableID and tableName states for API calls and page elements 

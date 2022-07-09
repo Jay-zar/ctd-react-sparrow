@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'; 
-import { BrowserRouter, Route, Routes, Redirect, Link} from 'react-router-dom';
-import ToDoContainer from './components/ToDoContainer';
-import style from './components/ToDoList.module.css';
+import { BrowserRouter, Route, Routes, Redirect} from 'react-router-dom';
 import Header from './components/Header';
 import HomePage from './Pages/Home';
 import GoalPage from './Pages/Goals';
