@@ -8,7 +8,7 @@ const InputWithLabel= ({children, toDoTitle, handleTitleChange}) => {
     return (
         <>
             <label htmlFor="toDoTitle">{children}</label>
-            <input className={style.InputBar} id="toDoTitle" type="text" name="title" value={toDoTitle} onChange={handleTitleChange} ref={inputRef}/>
+            <input placeholder="Add a item" className={style.InputBar} id="toDoTitle" type="text" name="title" value={toDoTitle} onChange={handleTitleChange} ref={inputRef}/>
         </>
     ) 
 }
