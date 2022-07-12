@@ -5,13 +5,13 @@ import propTypes from 'prop-types';
 const AddToDoForm= ({onAddToDo}) => {
     const [toDoTitle, setToDoTitle]=React.useState('');
 
-    const handleTitleChange =(event) => {
-        const newToDoTitle = event.target.value;
+    const handleTitleChange =(e) => {
+        const newToDoTitle = e.target.value;
         setToDoTitle(newToDoTitle);
     }
 
-    const handleAddToDo=(event) => {
-        event.preventDefault();
+    const handleAddToDo=(e) => {
+        e.preventDefault();
         onAddToDo({title: toDoTitle, id: Date.now()});
         setToDoTitle("");
     };
