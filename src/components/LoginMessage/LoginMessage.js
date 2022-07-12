@@ -12,7 +12,6 @@ const LoginMessage = () => {
     const handleLogin = (e) => {
         e.preventDefault();
         if (username.trim().length > 0 && password.trim().length > 0) {
-            console.log("Login Successful")
             setLoggedIn(true);
             
         }
@@ -23,10 +22,10 @@ const LoginMessage = () => {
     }
     return(
         <div className={style.LoginElements}>
-            <h1>Welcome</h1>
-            <h3>Please enter your information</h3>
-            <input placeholder="Username" type="text" onChange={(e)=> setUsername(e.target.value)}/>
-            <input placeholder="Password" type="text" value={password} onChange={(e)=> setPassword(e.target.value)}/>
+            <h1 className={style.LoginH1}>Welcome</h1>
+            <h4>Please enter your login</h4>
+            <input placeholder="Username" type="text" className={style.LoginInput} value={username} onChange={(e)=> setUsername(e.target.value)}/>
+            <input placeholder="Password" type="text" className={style.LoginInput} value={password} onChange={(e)=> setPassword(e.target.value)}/>
             <button className={style.LoginButton} onClick={handleLogin}>Login</button>
         </div>
     )

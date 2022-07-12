@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import style from './ToDoList.module.css';
+import style from './ToDoListItem.module.css';
 function ToDoListItem({todo, onRemoveToDo}) {
-  //unsure if I need to keep in id={todo.id} in li? works without it
+  //Unsure if I need to keep in id={todo.id} in li? works without it
   return (
     <>
       <li id= {todo.id} className= {style.ListItem}>

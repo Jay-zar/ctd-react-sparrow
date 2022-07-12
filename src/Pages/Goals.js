@@ -1,6 +1,6 @@
 import React from 'react';
 import ToDoContainer from '../components/ToDoContainer/ToDoContainer';
-import Header from '../components/Header.js'
+import Header from '../components/Header/Header.js'
 function GoalPage () {
   // tableID and tableName states for API calls and page elements 
   const tableID = "tblkaCIQzwLTleDoJ";

@@ -1,0 +1,14 @@
+.Root {
+    margin: 0px;
+    background-color: rgb(0,159,183);
+    color: rgb(38, 49, 52);
+    min-width: 400px;
+}
+
+.Container {
+    margin: 1em 25%;
+    padding: 10px;
+    overflow: hidden;
+    align-self: center;
+    justify-self: center;
+}

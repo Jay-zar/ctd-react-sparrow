@@ -1,0 +1,25 @@
+.Header {
+    color: rgb(38, 49, 52);
+    background-color: rgb(254,215,102);
+    padding: 8px;
+    margin: 0px;
+    height: 3em;
+    justify-content: right;
+    position: sticky;
+}
+
+.NavItem {
+    margin: 5px 10px 0px 10px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(38, 49, 52);
+    text-decoration: none;
+    font-size:x-large;
+}
+
+.NavLogout  {
+    margin: 5px -5px 0px 60px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(38, 49, 52);
+    text-decoration: none;
+    font-size: medium;
+}

@@ -1,10 +1,10 @@
 import React, { useEffect} from 'react';
 import PropTypes from 'prop-types';
-import AddToDoForm from '../addToDoForm';
-import SortToggle from '../SortToggle';
-import ToDoList from '../todolist';
+import AddToDoForm from '../AddToDoForm/addToDoForm';
+import SortToggle from '../SortToggle/SortToggle';
+import ToDoList from '../ToDoList/todolist';
 import LoadingMessage from '../LoadingMessage/LoadingMessage';
-import style from '../ToDoList.module.css';
+import style from './ToDoContainer.module.css';
 
 function ToDoContainer ({tableID , tableName}) {
   

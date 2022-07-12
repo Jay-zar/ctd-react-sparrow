@@ -1,6 +1,6 @@
 import React, { useRef , useEffect } from 'react';
 import PropTypes from 'prop-types';
-import style from './ToDoList.module.css';
+import style from './InputWithLabel.module.css';
 const InputWithLabel= ({children, toDoTitle, handleTitleChange}) => {
     const inputRef= React.useRef();
   useEffect(()=>
@@ -8,7 +8,7 @@ const InputWithLabel= ({children, toDoTitle, handleTitleChange}) => {
     return (
         <>
             <label htmlFor="toDoTitle">{children}</label>
-            <input placeholder="Add a item" className={style.InputBar} id="toDoTitle" type="text" name="title" value={toDoTitle} onChange={handleTitleChange} ref={inputRef}/>
+            <input placeholder="Add an item" className={style.InputBar} id="toDoTitle" type="text" name="title" value={toDoTitle} onChange={handleTitleChange} ref={inputRef}/>
         </>
     ) 
 }

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import style from './ToDoList.module.css';
+import style from './SortToggle.module.css'
 
 function SortToggle ({sortType, handleToggle}) {
     return(

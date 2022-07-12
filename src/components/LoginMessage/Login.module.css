@@ -1,18 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat&family=Fascinate&family=Marck+Script&family=Nunito:wght@300&family=Pacifico&family=Patrick+Hand&display=swap');
 
-h1, h2 {
-    font-family: 'Pacifico', cursive;
-}
 
-
-h1 {
+.LoginH1 {
     color: rgb(255,112,112);
+    align-self: center;
+    margin: 5px 30% 0px 30%;
 }
-input {
-    margin: 4px;
+
+.LoginH4 {
+    font-family: 'Pacifico', cursive;
+    margin: 8px 30% 0px 30%;
+}
+
+.LoginInput {
+    margin: 8px 30% 0px 30%;
+    width: 150px;
     cursor: pointer;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (min-width: 700px) {
+     .LoginInput {
+         width: 150px;
+     }
 }
 
 .LoginButton {
@@ -21,6 +32,7 @@ input {
     font-family: 'Nunito', 'sans-serif';
     border: 'none';
     border-radius: 8px;
+    margin: 8px 30% 0px 30%;
     font-size: medium;
     width: 6em;
     height: 2.5em;
@@ -32,11 +44,11 @@ input {
     background-color: rgb(254,215,102);
     color: rgb(54,73,78);
     font-family: 'Nunito', 'sans-serif';
-    margin: 3em 25% 0px 25%;
-    padding: 4px;
-    display: block;
-    min-width: 200px;
-    display: block;
+    margin: 2em 25% 0px 25%;
+    padding: 8px 5px;
+    min-width: 170px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }

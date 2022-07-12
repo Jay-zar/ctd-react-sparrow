@@ -1,6 +1,6 @@
 import React from 'react';
-import InputWithLabel from './InputWithLabel';
-import style from './ToDoList.module.css';
+import InputWithLabel from '../InputWithLabel/InputWithLabel';
+import style from './AddToDoForm.module.css';
 import propTypes from 'prop-types';
 const AddToDoForm= ({onAddToDo}) => {
     const [toDoTitle, setToDoTitle]=React.useState('');
