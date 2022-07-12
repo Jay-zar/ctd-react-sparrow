@@ -1,38 +1,21 @@
-import React, { useEffect } from 'react'; 
-import AddToDoForm from './addToDoForm';
-import ToDoList from './todolist';
-
+import React from 'react'; 
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import HomePage from './Pages/Home';
+import GoalPage from './Pages/Goals';
+import LoginPage from './Pages/Login';
+import stylesheet from './App.module.css'
 function App() {
-   //read the list from local storage after load 
-  const [toDoList, setToDoList]= React.useState([]); 
-  const [isLoading, setIsLoading]= React.useState(true);
-  const addToDo= (newToDo)=> {
-    setToDoList([...toDoList, newToDo])
-  }
-  useEffect(()=> {
-    new Promise((resolve, reject)=> setTimeout(()=> resolve({data: {toDoList: []} }), 2000))
-    .then((result)=> {
-      setToDoList(result.data.toDoList);
-      setIsLoading(false);
-    })
-  }, []);
-  //setting list from the input box
-  useEffect(()=> {
-    if (isLoading === false) {
-      localStorage.setItem('savedToDoList', JSON.stringify(toDoList))
-    }
-  }, [toDoList]);
-  const removeToDo= (id)=> {
-    const filteredToDoList= toDoList.filter((todo)=> todo.id !== id);
-    setToDoList(filteredToDoList);
-}
+
   return (
-    <div style={{ textAlign: 'center' }}>
-     <h1>To Do List</h1>
-     <AddToDoForm onAddToDo={addToDo}/>
-     {isLoading=== true && <p>Loading....</p>}
-     {isLoading=== false && <ToDoList toDoList={toDoList} onRemoveToDo={removeToDo}/>} 
-    </div>
+   <BrowserRouter>
+      <div>
+        <Routes>
+          <Route exact path="/" element={<LoginPage/>}/>
+          <Route path="/home" element={<HomePage/>}/>
+          <Route path="/goals" element={<GoalPage/>}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

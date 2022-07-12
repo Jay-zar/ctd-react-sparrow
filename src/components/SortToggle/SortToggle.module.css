@@ -1,0 +1,12 @@
+.SortToggle {
+    border: 'none';
+    margin: 8px 20% 0px 8px;
+    background-color: rgb(255,112,112);
+    color: rgb(54,73,78);
+    border-radius: 8px;
+    font-size: medium;
+    height: 1.5em;
+    width: 5.5em;
+    display: grid;
+    align-self: flex-start;
+}
