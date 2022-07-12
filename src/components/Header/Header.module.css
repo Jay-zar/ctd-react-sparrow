@@ -16,6 +16,12 @@
     font-size:x-large;
 }
 
+@media screen and (min-width: 400px) {
+    .NavItem {
+      font-size: large;
+    }
+  }
+
 .NavLogout  {
     margin: 5px -5px 0px 60px;
     font-family: 'Pacifico', cursive;

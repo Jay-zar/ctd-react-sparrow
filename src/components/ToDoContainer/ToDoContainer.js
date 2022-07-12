@@ -11,8 +11,8 @@ function ToDoContainer ({tableID , tableName}) {
    //state variables and API urls used
    const [toDoList, setToDoList] = React.useState([]); 
    const [isLoading, setIsLoading] = React.useState(true);
-   const [direction, setDirection] = React.useState('desc');
-   const [sortType, setSortType] = React.useState('Sort Z-A');
+   const [direction, setDirection] = React.useState('asc');
+   const [sortType, setSortType] = React.useState('Sort A-Z');
 
    const url = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE_ID}/${tableID}?maxRecords=10&sort[0][field]=Title&sort[0][direction]=${direction}&view=Grid%20view`
    const updateURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE_ID}/${tableID}/`

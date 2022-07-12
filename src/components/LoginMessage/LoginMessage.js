@@ -13,12 +13,11 @@ const LoginMessage = () => {
         e.preventDefault();
         if (username.trim().length > 0 && password.trim().length > 0) {
             setLoggedIn(true);
-            
+            navigate("/Home");
         }
         else {
             alert("Please enter a username and password.");
         }
-        navigate("/Home");
     }
     return(
         <div className={style.LoginElements}>

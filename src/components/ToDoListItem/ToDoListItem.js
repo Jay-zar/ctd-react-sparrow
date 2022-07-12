@@ -7,7 +7,8 @@ function ToDoListItem({todo, onRemoveToDo}) {
     <>
       <li id= {todo.id} className= {style.ListItem}>
       {todo.fields.Title}
-      <img src="https://cdn.discordapp.com/attachments/955553213988360212/989219882530922506/trashIcon.png" 
+      <img alt="Trash can icon"
+      src="https://cdn.discordapp.com/attachments/955553213988360212/989219882530922506/trashIcon.png" 
       className= {style.RemoveButton} 
       onClick={() => onRemoveToDo(todo.id)}/>
       </li>
