@@ -5,6 +5,7 @@ import SortToggle from '../SortToggle/SortToggle';
 import ToDoList from '../ToDoList/todolist';
 import LoadingMessage from '../LoadingMessage/LoadingMessage';
 import style from './ToDoContainer.module.css';
+import { AppProvider } from '../AppProvider';
 
 function ToDoContainer ({tableID , tableName}) {
   
@@ -107,6 +108,7 @@ function ToDoContainer ({tableID , tableName}) {
     }
 
     return(
+
         <div  className= {style.Root}>
         <div className= {style.Container}>
           <h1>{tableName}</h1>
